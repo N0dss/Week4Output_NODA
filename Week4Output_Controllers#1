@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Controllers;
+
+class ActionPart1 extends BaseController
+{
+    public function postAction($action)
+    {
+        $link = route_to('posts.show', $action);
+        
+        return redirect()->to($link);
+    }
+    
+}
+
+
+
+
+
