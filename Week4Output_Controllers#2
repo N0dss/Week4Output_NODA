@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Controllers;
+
+class ActionPart2 extends BaseController
+{
+    public function returnFunction($info)
+    {
+        $link = route_to('show.info', $info);
+        return redirect()->to($link);
+    }
+    
+}
+
+
+
+
